@@ -1,0 +1,25 @@
+Python 3.6.0 (v3.6.0:41df79263a11, Dec 23 2016, 07:18:10) [MSC v.1900 32 bit (Intel)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import calender
+Traceback (most recent call last):
+  File "<pyshell#0>", line 1, in <module>
+    import calender
+ModuleNotFoundError: No module named 'calender'
+>>> import calendar
+>>> age = int (input("enter your age:"))
+enter your age:20
+>>> date = int (input("enter your date of birth:"))
+enter your date of birth:23
+>>> month = int (input("enter your month of birth(1-12):"))
+enter your month of birth(1-12):9
+>>> current year = int (input("enter your current year:"))
+SyntaxError: invalid syntax
+>>> currentyear = int (input("enter your current year:"))
+enter your current year:2017
+>>> year = currentyear-age
+>>> weekday = calendar.weekday(year,month,date)
+>>> dayofweek = calendar.day_name[weekday]
+>>> monthstring = calendar.month_name[month]
+>>> print("you were born on a " + str(date) + " " + monthstring + " " + str(year) + " on a " + dayofweek)
+you were born on a 23 September 1997 on a Tuesday
+>>> 
